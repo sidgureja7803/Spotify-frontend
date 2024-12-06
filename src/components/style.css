@@ -1,0 +1,6 @@
+.input.error input {
+  border: 1px solid rgb(156, 2, 2);
+}
+.input input {
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}/*# sourceMappingURL=style.css.map */

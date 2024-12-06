@@ -1,0 +1,44 @@
+nav {
+    &:not(:has(.active)) {
+        .nav-item {
+            &:nth-child(1) {
+                .icon {
+                    opacity: 1 !important;
+                }
+            }
+        }
+    }
+
+    .nav-item.active {
+        .icon {
+            opacity: 1 !important;
+        }
+    }
+
+    .nav-item {
+        .icon {
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.artists {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.audios {
+    .recent {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    }
+}
+
+.audios-explore {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    gap: 1rem;
+    grid-auto-rows: 1fr;
+}
